@@ -9,7 +9,8 @@ var mongoose =require('mongoose');
 var groupRoutes = require('./routes/groupRoute');
 var notesRoutes = require('./routes/notesRoute');
 
-const dbUrl="mongodb+srv://sonali_admin:omd_test_sonali@cluster0.cmcydzi.mongodb.net/notes_dev?retryWrites=true&w=majority&appName=Cluster0";
+require('dotenv').config()
+const dbUrl=process.env.DBURL;
 
 var app = express();
 
