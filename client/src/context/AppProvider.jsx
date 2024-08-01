@@ -3,7 +3,7 @@ import React, { useEffect, useState } from "react";
 
 const AppContext = React.createContext();
 
-const api_url = "http://localhost:8080/api";
+const api_url = "https://pocketnotes-dt12.onrender.com/api";
 
 const AppProvider = ({ children }) => {
   const [noteGoups, setNoteGroups] = useState([]);
